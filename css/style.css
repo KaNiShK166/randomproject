@@ -1,0 +1,336 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variables */
+:root{
+    --navbar-height: 60px;
+}
+
+body{
+    font-family: 'Bree serif', cursive;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+#navbar{
+    position: relative;
+    font-family: 'Bree serif', cursive;
+}
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+
+/* navigation bar: logo aur image  */
+#logo{
+    margin: 4px 2px;
+
+}
+
+#logo img{
+    width: 100px;
+    height: 100px;
+    margin: 3px 6px;
+    border-radius: 50px;
+}
+/* navigation bar: List styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 4px 31px;
+    text-decoration: none;
+    border-radius: 16px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+#navbar ul li a:hover{
+    color: deeppink;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: " ";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: url(https://t4.ftcdn.net/jpg/03/34/20/39/360_F_334203915_hyNSGOydpdyZYAkKGYJ7z1HEBffuyoRV.jpg) no-repeat center center/cover;
+    height: 602px;
+    /* we are in the css folder right now so in order to select the img in the image folder we need to use double dots to come out of this folder and then select the img folder to select the img folder  */
+    z-index: -1;
+    opacity: 0.8;
+    position: absolute;
+    /* height: 72%; */
+    width: 100%;
+}
+
+
+/* home section */
+#home h1{
+    font-family: 'Bree serif', cursive;
+    color:rgb(99, 13, 13);
+    text-align: center;
+    margin-top: -153px;
+    margin-bottom: -3px;
+}
+#home p{
+    font-family: 'Bree serif', cursive;
+    color:black;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Bestseller Products section */
+#services p{
+    font-family: 'Bree serif', serif;
+    color:black;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#services{
+    display: flex;
+    flex-direction: row;
+    margin: 9px;
+    margin-right: 54px;
+}
+#services .box{
+    border: 2px solid brown;
+    border-radius: 20px;
+    margin-left: 37px;
+    margin-bottom: 0px;
+    background-color: #f2f2f2;
+    padding: 22px 20px;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin:auto;
+    border-radius: 21px;
+}
+
+#services{
+    font-family: 'Bree Serif', serif;
+}
+
+
+#ram {
+    margin-top: -47px;
+    font-size: 3rem;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+/* client section */
+#client-section{
+    position: relative;
+}
+#client::before{
+    content: "";
+    position: absolute;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYMQRRSidzKE8SrwxTpKCUV2IMGAJ3nW7Duw&usqp=CAU) no-repeat right center/cover;
+    height: 64%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.69;
+}
+
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+#client img{
+    height: 158px;
+    border-radius: 21px;
+}
+
+.client-item{
+    padding: 10px 40px;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('../img/contact.jpg') no-repeat  center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-family:'Bree Serif', serif ;
+    font-size: 1.3rem;
+}
+
+footer{
+    background-color: rgb(110, 59, 59);
+    color: white;
+}
+
+/* utility class */
+.heading_prime{
+    font-size:3rem;
+    margin: 0px;
+    padding: 19px;
+}
+
+.secondary-heading{
+    font-size: 1.5rem;
+}
+
+.btn{
+    padding: 6px 22px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.secondary-heading{
+    font-family:'Bree Serif', serif ;
+    font-size: 2.2rem;
+
+}
+
+.center{
+    text-align: center;
+}
+
+/* #navbar ul:nth-child(1) {
+    width: 88px;
+    color: #000000b8;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0px 18px;
+    text-decoration: none;
+    pointer-events: initial;
+    line-height: 25px;
+    position: relative;
+    display: inline-block;
+  }
+   */
+  /* #navbar ul:nth-child(2) {
+    width: 88px;
+    color: #000000b8;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0px 18px;
+    text-decoration: none;
+    pointer-events: initial;
+    line-height: 25px;
+    position: relative;
+    display: inline-block;
+  }
+   */
+  /* #navbar ul:nth-child(1):after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: -16px;
+    bottom: -12px;
+    margin-left: 0px;
+    background-color: #ffc107;
+    display: block;
+  } */
+
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-color: #151515;
+    display: grid;
+    place-content: center;
+}
+*/
+
+/* .wrapper 
+{
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: #fff;
+    display:grid;
+    place-items: center;
+    transition: opacity .25s ,visibility 2s;
+}
+
+.fade
+{
+    opacity:0;
+    visibility: hidden;
+} */
+
